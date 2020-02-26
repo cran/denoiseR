@@ -47,7 +47,7 @@ estim_delta <- function(X,
                         maxiter = 1000, 
                         threshold = 1e-08){
   
-  if(class(X) == "data.frame"){
+  if(inherits(X, "data.frame")){
     X <- as.matrix(X)
   }
   

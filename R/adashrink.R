@@ -51,7 +51,7 @@ adashrink <- function(X,
   
   # housekeeping
   
-  if(class(X) == "data.frame"){
+  if(inherits(X, "data.frame")){
     X <- as.matrix(X)
   }
   

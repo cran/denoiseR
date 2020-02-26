@@ -31,7 +31,7 @@ estim_sigma <- function(X,
   method <- match.arg(method, c("LN","MAD","ln","mad", "Ln","Mad"), several.ok = T)[1]
   method <- tolower(method)
   
-  if(class(X) == "data.frame"){
+  if(inherits(X, "data.frame")){
     X <- as.matrix(X)
   }
   
